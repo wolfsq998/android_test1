@@ -3,9 +3,6 @@
     <item>
         <shape android:shape="oval" >
             <solid android:color="@color/WN_oval_frame" />
-            <size
-                android:width="240dp"
-                android:height="240dp"/>
         </shape>
     </item>
 
@@ -17,9 +14,6 @@
         <!-- 在实际使用中我发现1dp达不到显示效果，而2dp正好可以显示边框 -->
         <shape android:shape="oval" >
             <solid android:color="@color/colorWhite" />
-            <size
-                android:width="240dp"
-                android:height="240dp"/>
             <padding
                 android:left="5dp"
                 android:top="5dp"

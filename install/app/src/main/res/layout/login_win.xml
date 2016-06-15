@@ -39,42 +39,7 @@
             android:layout_marginRight="15dp"
             android:text="@string/app_name" />
     </LinearLayout>
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:clickable="false"
-        android:visibility="gone"
-        android:id="@+id/linearLayout9">
 
-        <ImageButton
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:id="@+id/login_win_update_pas_but"
-            android:background="@drawable/icon_button1"
-            android:layout_alignBottom="@+id/imageView12"
-            android:layout_alignLeft="@+id/imageView12"
-            android:layout_alignStart="@+id/imageView12" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="忘记\n密码"
-            android:id="@+id/textView26"
-            android:textSize="20dp"
-            android:gravity="center"
-            android:layout_alignLeft="@+id/imageView12"
-            android:layout_alignStart="@+id/imageView12"
-            android:layout_alignBottom="@+id/imageView12"
-            android:textColor="@color/colorWhite"
-            android:enabled="false"
-            android:clickable="false"
-            android:layout_alignTop="@+id/login_win_update_pas_but"
-            android:layout_alignRight="@+id/login_win_update_pas_but"
-            android:layout_alignEnd="@+id/login_win_update_pas_but"
-            android:background="@color/colorAlpha1" />
-
-    </LinearLayout>
     <FrameLayout
         android:layout_width="300dp"
         android:layout_height="300dp"
@@ -116,7 +81,7 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/shape_line"
+                android:background="@drawable/shape_dotted_line"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:layerType="software">
@@ -171,14 +136,19 @@
         android:layout_marginBottom="-50dp" />
 
     <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:text="New Button"
-        android:id="@+id/reg_but"
+        android:id="@+id/login_win_update_pas_but"
         android:layout_gravity="left|bottom"
-        android:background="@drawable/shape_oval_login_but"
+        android:background="@drawable/shape_oval"
         android:layout_alignLeft="@+id/login_et_ll"
         android:layout_alignStart="@+id/login_et_ll"
         android:layout_alignTop="@+id/login_win_login_but" />
+
+    <requestFocus
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="59dp" />
 
 </RelativeLayout>

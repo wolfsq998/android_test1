@@ -8,11 +8,11 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorDiSe"
         android:id="@+id/linearLayout3"
         android:clickable="false"
-        android:divider="@drawable/icon_line2"
-        android:showDividers="beginning|middle|end" >
+        android:divider="@drawable/shape_solid_line"
+        android:showDividers="middle|end"
+        android:background="@color/colorWhite">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -102,7 +102,7 @@
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:id="@+id/imageView6"
                 android:background="@drawable/icon_line3"
                 android:layout_marginTop="5dp"
@@ -191,7 +191,6 @@
                     android:textSize="16dp" />
 
                 <EditText
-                    style="@style/my_edittext_style"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:id="@+id/curtain_width_et"
@@ -238,7 +237,6 @@
                     android:textSize="16dp" />
 
                 <EditText
-                    style="@style/my_edittext_style"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:id="@+id/curtain_height_et"
@@ -305,7 +303,6 @@
                 android:layout_marginRight="11dp">
 
                 <EditText
-                    style="@style/my_edittext_style"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/cur_fabric_num_et"
@@ -359,7 +356,6 @@
                 android:layout_marginRight="11dp" >
 
                 <EditText
-                    style="@style/my_edittext_style"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/cur_crafts_et"
@@ -413,7 +409,6 @@
                 android:layout_marginRight="11dp" >
 
                 <EditText
-                    style="@style/my_edittext_style"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/cur_puttee_et"
@@ -467,7 +462,6 @@
                 android:layout_marginRight="11dp" >
 
                 <EditText
-                    style="@style/my_edittext_style"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/cur_track_et"
@@ -542,7 +536,6 @@
                     android:textSize="16dp" />
 
                 <EditText
-                    style="@style/my_edittext_style"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:id="@+id/cur_track_length_et"
@@ -578,7 +571,6 @@
                     android:layout_margin="5dp" />
 
                 <EditText
-                    style="@style/my_edittext_style"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:id="@+id/cur_track_count_et"

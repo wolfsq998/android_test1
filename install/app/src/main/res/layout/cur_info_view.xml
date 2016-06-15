@@ -9,8 +9,8 @@
         android:background="@color/colorWhite"
         android:id="@+id/linearLayout3"
         android:clickable="false"
-        android:divider="@drawable/icon_line2"
-        android:showDividers="beginning|middle|end"
+        android:divider="@drawable/shape_solid_line"
+        android:showDividers="middle|end"
         android:layout_marginTop="@dimen/appbar_padding_top">
 
         <LinearLayout

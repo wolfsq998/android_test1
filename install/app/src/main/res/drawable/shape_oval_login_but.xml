@@ -16,7 +16,13 @@
         android:bottom="5dp">
         <!-- 在实际使用中我发现1dp达不到显示效果，而2dp正好可以显示边框 -->
         <shape android:shape="oval" >
-            <solid android:color="@color/WN_button_bg1" />
+            <!-- gradient设置渐变 -->
+            <gradient
+                android:endColor="#000000"
+                android:gradientRadius="300"
+                android:startColor="@color/WN_dotted_line"
+                android:type="radial" />
+            <!--<solid android:color="@color/WN_button_bg1" />-->
             <!--<size-->
                 <!--android:width="150dp"-->
                 <!--android:height="150dp"/>-->

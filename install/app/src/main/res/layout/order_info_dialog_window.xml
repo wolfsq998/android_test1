@@ -36,6 +36,7 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/order_info_dialog_ll"></LinearLayout>
+            android:id="@+id/order_info_dialog_ll"
+            android:background="@color/colorWhite"></LinearLayout>
     </ScrollView>
 </LinearLayout>

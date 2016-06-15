@@ -84,9 +84,9 @@
         <item name="android:paddingRight">20dp</item>
     </style>
     <!--parent="@android:style/Widget.EditText"-->
-    <style name="my_edittext_style">
-        <item name="android:background">@drawable/shurukuang1</item>
-    </style>
+    <!--<style name="my_edittext_style">-->
+        <!--<item name="android:background">@drawable/shape_et</item>-->
+    <!--</style>-->
     <!--下来菜单样式-->
     <style name="spinner_style">
         <item name="android:background">@drawable/spinner_selector</item>

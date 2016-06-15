@@ -48,56 +48,69 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"
-        android:background="@color/colorWhite">
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:background="@drawable/shape_layout">
 
-        <LinearLayout
-            android:orientation="horizontal"
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@color/colorAlpha1"
-            android:layout_marginTop="10dp">
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/reg_win_phone_et"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_free"
+            android:hint="请输入注册手机号码"
+            android:gravity="center"
+            android:textColor="@color/colorGreen"
+            android:textColorHint="@color/regzitibackground"
+            android:textSize="14dp"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp" />
 
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="32dp"
-                android:layout_weight="1"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="30dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:id="@+id/reg_win_paw_et1"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_free"
+            android:hint="请设置登陆密码(长度6~12位)"
+            android:gravity="center"
+            android:textColor="@color/colorGreen"
+            android:textColorHint="@color/regzitibackground"
+            android:textSize="14dp"
+            android:singleLine="true"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:password="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
 
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:inputType="number"
-                    android:ems="10"
-                    android:id="@+id/reg_win_phone_et"
-                    android:layout_gravity="center_vertical"
-                    android:background="@color/colorAlpha1"
-                    android:hint="请输入注册手机号码"
-                    android:gravity="center"
-                    android:textColor="@color/colorGreen"
-                    android:textColorHint="@color/regzitibackground"
-                    android:textSize="14dp"
-                    android:maxLength="11"
-                    android:maxLines="1"
-                    android:singleLine="true" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Small Text"
-                    android:id="@+id/textView114"
-                    android:background="@color/colorGreen"
-                    android:layout_gravity="center_vertical" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:id="@+id/reg_win_paw_et2"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_free"
+            android:hint="再次输入您的登陆密码"
+            android:gravity="center"
+            android:textColor="@color/colorGreen"
+            android:textColorHint="@color/regzitibackground"
+            android:textSize="14dp"
+            android:singleLine="true"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:password="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -105,152 +118,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"
-        android:background="@color/colorWhite">
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:background="@drawable/shape_layout"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin">
 
-        <LinearLayout
-            android:orientation="horizontal"
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@color/colorAlpha1"
-            android:layout_marginTop="10dp">
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:weightSum="1"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp">
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:ems="10"
-                    android:id="@+id/reg_win_paw_et1"
-                    android:layout_gravity="center_vertical"
-                    android:background="@color/colorAlpha1"
-                    android:hint="请设置登陆密码(长度6~12位)"
-                    android:gravity="center"
-                    android:textColor="@color/colorGreen"
-                    android:textColorHint="@color/regzitibackground"
-                    android:textSize="14dp"
-                    android:singleLine="true"
-                    android:maxLength="12"
-                    android:maxLines="1"
-                    android:password="true" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:id="@+id/textView117"
-                    android:background="#59585b" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/colorAlpha1"
-            android:baselineAligned="false">
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                android:weightSum="1"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp">
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:ems="10"
-                    android:id="@+id/reg_win_paw_et2"
-                    android:layout_gravity="center_vertical"
-                    android:background="@color/colorAlpha1"
-                    android:hint="再次输入您的登陆密码"
-                    android:gravity="center"
-                    android:textColor="@color/colorGreen"
-                    android:textColorHint="@color/regzitibackground"
-                    android:textSize="14dp"
-                    android:singleLine="true"
-                    android:maxLength="12"
-                    android:maxLines="1"
-                    android:password="true" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Small Text"
-                    android:id="@+id/textView118"
-                    android:background="@color/colorGreen"
-                    android:layout_gravity="center_vertical" />
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"
-        android:background="@color/colorWhite">
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@color/colorAlpha1"
-            android:layout_marginTop="10dp" >
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:weightSum="1"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp" >
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:ems="10"
-                    android:id="@+id/rec_num_et"
-                    android:layout_gravity="center_vertical"
-                    android:background="@color/colorAlpha1"
-                    android:hint="请输入推荐码(若无推荐码可以不填)"
-                    android:gravity="center"
-                    android:textColor="@color/colorGreen"
-                    android:textColorHint="@color/regzitibackground"
-                    android:textSize="14dp"
-                    android:singleLine="true"
-                    android:maxLength="12"
-                    android:maxLines="1" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:id="@+id/textView43"
-                    android:background="@color/colorGreen"
-                    android:textColor="@color/colorGreen" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"></LinearLayout>
+            android:ems="10"
+            android:id="@+id/rec_num_et"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_free"
+            android:hint="请输入推荐码(若无推荐码可以不填)"
+            android:gravity="center"
+            android:textColor="@color/colorGreen"
+            android:textColorHint="@color/regzitibackground"
+            android:textSize="14dp"
+            android:singleLine="true"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -287,7 +177,7 @@
         android:layout_height="40dp"
         android:text="立即注册"
         android:id="@+id/reg_win_reg_but"
-        android:background="@color/colorfont"
+        android:background="@drawable/shape_button1"
         android:layout_below="@+id/textView102"
         android:layout_alignRight="@+id/textView102"
         android:layout_alignEnd="@+id/textView102"
@@ -299,4 +189,5 @@
         android:layout_marginRight="30dp"
         android:layout_marginBottom="-30dp"
         android:layout_marginTop="10dp" />
+
 </LinearLayout>

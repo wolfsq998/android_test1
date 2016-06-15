@@ -117,7 +117,7 @@
                             android:background="@color/colorWhite"
                             android:id="@+id/linearLayout2"
                             android:clickable="false"
-                            android:divider="@drawable/icon_line2"
+                            android:divider="@drawable/shape_solid_line"
                             android:showDividers="beginning|middle|end">
 
                             <TextView
@@ -159,7 +159,6 @@
                                     android:contentDescription="" />
 
                                 <EditText
-                                    style="@style/my_edittext_style"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:id="@+id/cus_name_et"
@@ -205,7 +204,6 @@
                                     android:layout_marginBottom="5dp" />
 
                                 <EditText
-                                    style="@style/my_edittext_style"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:textColor="@color/colorBlack"
@@ -251,7 +249,6 @@
                                     android:layout_marginBottom="5dp" />
 
                                 <EditText
-                                    style="@style/my_edittext_style"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:id="@+id/cus_addr_et"
@@ -315,7 +312,6 @@
                                     android:visibility="gone">
 
                                     <EditText
-                                        style="@style/my_edittext_style"
                                         android:layout_width="0dp"
                                         android:layout_height="match_parent"
                                         android:id="@+id/visit_time_year_et"
@@ -342,7 +338,6 @@
                                         android:textSize="16dp" />
 
                                     <EditText
-                                        style="@style/my_edittext_style"
                                         android:layout_width="0dp"
                                         android:layout_height="match_parent"
                                         android:id="@+id/visit_time_month_et"
@@ -369,7 +364,6 @@
                                         android:textSize="16dp" />
 
                                     <EditText
-                                        style="@style/my_edittext_style"
                                         android:layout_width="0dp"
                                         android:layout_height="match_parent"
                                         android:id="@+id/visit_time_day_et"
@@ -434,7 +428,6 @@
                                         android:layout_marginBottom="5dp" />
 
                                     <EditText
-                                        style="@style/my_edittext_style"
                                         android:layout_width="0dp"
                                         android:layout_height="match_parent"
                                         android:id="@+id/work_id_et"

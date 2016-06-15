@@ -46,7 +46,6 @@ public class LoginWindow extends AppCompatActivity implements View.OnClickListen
     private static final int LOGIN =0;
     private int m_Inlet,m_UserId;//入口
     private EditText m_UserEt,m_PawEt;
-    private Button m_RegBut;
     private LinearLayout m_LoginBut;
     private ImageButton m_PasMsgBut;
     private int m_ErrcdInfo=0;
@@ -169,12 +168,6 @@ public class LoginWindow extends AppCompatActivity implements View.OnClickListen
         m_LoginBut = (LinearLayout)findViewById(R.id.login_win_login_but);
         m_LoginBut.setOnClickListener(this);
 
-        m_RegBut=(Button)findViewById(R.id.reg_but);
-        String regButText = getResources().getString(R.string.login_but_text);
-        SpannableString ss = new SpannableString(regButText);
-        ss.setSpan(new ForegroundColorSpan(getResources().getColor(R.color.cityFont)),2,6,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-        ss.setSpan(new StyleSpan(Typeface.BOLD_ITALIC),2,6,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-        m_RegBut.setText(ss);
         m_PasMsgBut=(ImageButton)findViewById(R.id.login_return_but);
         m_PasMsgBut.setOnClickListener(this);
 

@@ -61,4 +61,10 @@
     <color name="WN_oval_frame">#9600bdb0</color>
 <!--登陆界面输入框填充色-->
     <color name="WN_login_et">#FFEEF4F5</color>
+<!--输入框填充色-->
+    <color name="WN_et">#FFEEF4F5</color>
+<!--实体线填充色-->
+    <color name="WN_solid_line">#00bdb0</color>
+<!--虚体线填充色-->
+    <color name="WN_dotted_line">#fdb301</color>
 </resources>

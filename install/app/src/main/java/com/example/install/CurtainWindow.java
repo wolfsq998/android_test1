@@ -36,6 +36,8 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 
 /**
@@ -339,6 +341,14 @@ public class CurtainWindow extends AppCompatActivity implements View.OnClickList
                 AddCur(0);
                 break;
             case R.id.input_but://下单按钮
+                m_InputBut.setClickable(false);
+                Timer timer = new Timer();
+                timer.schedule(new TimerTask() {
+                    @Override
+                    public void run() {
+                        m_InputBut.setClickable(true);
+                    }
+                },3000);
                 setCurInfo();
                 break;
             case R.id.work_id_picker_but://指定工人选择
@@ -406,10 +416,12 @@ public class CurtainWindow extends AppCompatActivity implements View.OnClickList
                 try {
                     Log.i("@@@：" + ARG, "提交订单 Errcd→→ " +  msg.getInt("errcd"));
                     if (msg.getInt("errcd")==-1){
+                        m_InputBut.setClickable(true);
                         Message message = new Message();
                         message.what = UPLOADORDER_OK;
                         uploadorder.sendMessage(message);
                     }else{
+                        m_InputBut.setClickable(true);
                         Message message = new Message();
                         message.what = UPLOADORDER_NO;
                         uploadorder.sendMessage(message);
