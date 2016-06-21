@@ -2,9 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorDiSe"
-    android:divider="@drawable/shape_solid_line"
-    android:showDividers="middle">
+    android:background="@color/colorDiSe">
+    <!--android:divider="@drawable/shape_solid_line"-->
+    <!--android:showDividers="middle">-->
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -111,7 +111,7 @@
             android:layout_weight="1"
             android:textColor="@color/colorWhite"
             android:textSize="16sp"
-            android:background="@color/colortab1"
+            android:background="@drawable/shape_free1"
             android:foregroundGravity="center|clip_vertical" />
 
         <Button

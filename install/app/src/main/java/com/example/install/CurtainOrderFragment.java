@@ -2,6 +2,7 @@ package com.example.install;
 
 import android.app.Fragment;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -10,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -25,13 +27,13 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import static com.example.install.R.drawable.shape_free1;
 
 
 /**
  * Created by Administrator on 2016/3/31.
  */
-public class
-        CurtainOrderFragment extends Fragment implements View.OnClickListener{
+public class CurtainOrderFragment extends Fragment implements View.OnClickListener{
 
     private static final String ARG = "COrderFragment";
 
@@ -148,6 +150,7 @@ public class
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.curtain_order_window, container, false);
+        rootView.startAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.fade_in));
         m_NewCusOrderList = new ArrayList<>();
         m_OldCusOrderList = new ArrayList<>();
         m_NowCusOrderList = new ArrayList<>();
@@ -194,7 +197,7 @@ public class
             case R.id.order_new:
                 m_NewOrderLl.removeAllViews();
                 m_WaitRl.setVisibility(View.VISIBLE);
-                m_NewOrderRb.setBackgroundColor(getResources().getColor(R.color.colortab1));
+                m_NewOrderRb.setBackground(getResources().getDrawable(shape_free1));
                 m_NowOrderRb.setBackgroundColor(getResources().getColor(R.color.colortab2));
                 m_OldOrderRb.setBackgroundColor(getResources().getColor(R.color.colortab2));
                 for (int i=0;i<m_SvList.size();i++)
@@ -206,7 +209,7 @@ public class
                 m_NowOrderLl.removeAllViews();
                 m_WaitRl.setVisibility(View.VISIBLE);
                 m_NewOrderRb.setBackgroundColor(getResources().getColor(R.color.colortab2));
-                m_NowOrderRb.setBackgroundColor(getResources().getColor(R.color.colortab1));
+                m_NowOrderRb.setBackground(getResources().getDrawable(shape_free1));
                 m_OldOrderRb.setBackgroundColor(getResources().getColor(R.color.colortab2));
                 for (int i=0;i<m_SvList.size();i++)
                     if (i==1) m_SvList.get(i).setVisibility(View.VISIBLE);
